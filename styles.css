@@ -1,0 +1,140 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #16425B; /* Texto general en azul oscuro */
+    background-color: #E4F0D0; /* Fondo en verde suave */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #738290; /* Azul grisáceo */
+    color: #FFF7CF; /* Color crema para el texto */
+    padding: 20px 0;
+}
+
+header .logo {
+    max-height: 50px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #FFF7CF; /* Texto de la barra de navegación en color crema */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+header nav ul li a.active {
+    background-color: #C2D8B9; /* Verde suave para el botón activo */
+    border-radius: 5px;
+    color: #16425B;
+}
+
+/* Sección de About Us */
+.about-us {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #FFFFFF; /* Fondo blanco */
+}
+
+.about-us h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #16425B; /* Azul oscuro */
+}
+
+.about-us p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #16425B; /* Texto en azul oscuro */
+}
+
+/* Sección de equipo */
+.team {
+    padding: 50px 0;
+    background-color: #D0D7E8; /* Fondo azul claro */
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #16425B;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px; /* Espaciado entre los miembros en las filas */
+}
+
+.team-member {
+    width: 22%;
+    text-align: center;
+    background-color: #FFF7CF; /* Fondo en color crema */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 30px; /* Espacio entre la primera y segunda fila */
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #16425B; /* Títulos en azul oscuro */
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #738290; /* Texto en azul grisáceo */
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+/* Footer */
+footer {
+    background-color: #16425B; /* Azul oscuro */
+    color: #FFF7CF; /* Texto en color crema */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
